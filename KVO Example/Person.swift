@@ -13,6 +13,8 @@ import Foundation
 
 
 
+
+//Swift4 이전
 private var myContext = 0
 
 class PersonObserver:NSObject {

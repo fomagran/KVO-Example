@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        Swift4 이전
+//        let fomagran = Person()
+//        let observer = PersonObserver(withPerson:fomagran)
+//
+//        fomagran.name = "Khalid"
+//        fomagran.name = "Young"
 
         nameObservation = fomagran.observe(\Person.name, options: [.old,.new,.initial]) { (person, name) in
             print("\(name.oldValue ?? "") changed name to \(name.newValue ?? "")")
